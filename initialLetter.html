@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Initial Letter jQuery Plugin</title>
+	<meta charset="UTF-8">
+	
+	<link href="initialLetter-1.0.css" rel="stylesheet" />
+	
+	<!-- Use the below conditional statement to get IE 8, 7 and 6 to play nice -->
+	
+	<!--[if lt IE 9]> <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script> <![endif]-->
+	
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="jquery.initialLetter-1.0.js"></script>
+	<script >	
+	
+		jQuery(function($){
+
+			$("p:eq(0)").initialLetter({
+				initialLetter: "dropped"
+			});
+			
+			$("p:eq(1)").initialLetter({
+				initialLetter: "overlapped"
+			});
+			
+			$("p:eq(2)").initialLetter({
+				initialLetter: "raised"
+			});
+			
+			$("p:eq(3)").initialLetter({
+				initialLetter: "reversed"
+			});
+		});
+
+	</script>
+</head>
+
+<body>
+
+<div id="page">	
+	<div id="textblock">
+	<h1>Initial Letter jQuery plugin - <a href="http://812studio.com/wp-content/uploads/2010/04/initialLetter-1.0.zip">Download</a></h1>
+	
+		<h3>Dropped</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<h3>Overlapped</h3>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		
+		
+		<h3>Raised</h3>
+		<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+		
+		<h3>Reveresed</h3>
+		<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+	</div>	
+</div>
+	
+</body>
+</html>

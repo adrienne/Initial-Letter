@@ -1,0 +1,1 @@
+(function($){$.fn.initialLetter=function(options){var $options=$.extend({},$.fn.initialLetter.defaults,options);return this.each(function(){var $initialLetter=$options.initialLetter,$content=$(this).html();$(this).html($content.replace(/^([A-Za-z0-9])/g,'<span class='+$initialLetter+'>$1</span>'));$.fn.initialLetter.defaults={initialLetter:'dropped'};});};}(jQuery));

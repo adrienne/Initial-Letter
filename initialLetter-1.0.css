@@ -1,0 +1,107 @@
+/*
+ * Initial Letter - jQuery Plugin
+ * Make drop caps easily, and try out three more basic "initial letter" styles.
+ 
+ 	1. dropped		- The baseline of the initial letter is below the baseline of the body text
+	2. raised	 	- The top of the initial letter is above the height of the body text
+	3. reversed 	- The initial letter has a background
+	4. overlapped	- The initial cap con overlap or underlap the body copy. Keep the color and/or opacity light to maintain good readability.
+				
+ * Examples and documentation at: http://812studio.com/initial-letter-styles
+ * 
+ * Copyright (c) 	2010
+ *
+ * Version: 		1	(04/30/2010)
+ * Requires: 		jQuery v1.3+
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
+ 
+/*DEFAULT SETTINGS
+---------------------------------------------------------------------------*/
+
+/*
+ * Reset
+ */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, form, input, button { margin: 0; padding: 0; border: 0; outline: 0; text-decoration:none; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+/*
+ * General typography generated from http://lamb.cc/typograph/
+ */
+
+
+body 		{ font-size:100%; line-height:1.25; text-align:center; }
+#page		{ border:1px solid #fff; margin:0 auto; min-height:57.2761em; width:40.5em; }
+#textblock 	{ color:#333; margin: 2.125em 9em 9em 4.5em; text-align:justify; }
+h1, h2, h3 	{ margin:0; }
+h1 			{ font-size:1.5em; padding:1.45833em 0; }
+h2 			{ font-size:1.33333em; padding:1.25em 0; }
+h3 			{ font-size:1.16667em; font-variant: small-caps; padding:1.51785em 0; }
+
+
+.dropped	{	
+	font-size: 4.3em;
+	font-weight:bold;
+	float:left;
+	height:54px;
+	
+	line-height:0.95;
+	line-height:.8\9;
+	*line-height:.8;
+	_line-height:.8;
+	
+	padding:3px 5px 0 0;
+	width:auto;
+	}
+	
+.raised	{	
+	font-size:3em;
+	font-weight:bold;
+	line-height:.8;
+	padding:0 5px 0 0;
+	}
+	
+.reversed	{	
+	background-color:#333;
+	color:#fff;
+	font-size:3em;
+	font-weight:bold;
+	float:left;
+	height:70px;
+	
+	line-height:1.7;
+	line-height:1.5\9;
+	*line-height:1.5;
+	_line-height:1.5;
+	
+	padding:;
+	margin:5px 15px 0 0;
+	text-align:center;
+	width:70px;
+	}
+	
+	
+/*
+ * To make the Overlapped initial letter style work properly you need to set its containing element's position to relative
+ */
+ 
+p  { position:relative;}
+
+.overlapped	{	
+	color:#333;
+	display:inline;
+	font-size: 8em;
+	font-weight:900;
+	float:left;
+	height:auto;
+	line-height:1;
+	opacity:.3;
+	position:absolute;
+	left:-20px;
+	top:-20px;
+	width:auto;
+	z-index:-10;
+	}
